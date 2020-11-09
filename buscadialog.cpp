@@ -35,7 +35,7 @@ void BuscaDialog::on_buscador_textEdited(const QString &txt) {
     QString busqueda = "SELECT * FROM usuario WHERE ";
     switch (opc) {
     case OPC_NOMBRE:
-        busqueda += QString("nombre1 LIKE '%") + txt + "%'";
+        busqueda += QString("nombreC LIKE '%") + txt + "%'";
         break;
     case OPC_PASSWORD:
         busqueda += QString("password LIKE '%") + txt + "%'";

@@ -9,7 +9,7 @@ EditaDialog::EditaDialog(QWidget *parent) :
     ui->setupUi(this);
     QSqlTableModel *model = new QSqlTableModel(this);
     model->setTable("usuario");
-    model->select(); // Loads the books
+    model->select(); // Load the users
     ui->libros->setModel(model);
 }
 

@@ -16,7 +16,7 @@ EliminaDialog::EliminaDialog(QWidget *parent) :
     ui->setupUi(this);
     // Loads books
     QSqlQuery qry;
-    qry.exec("SELECT nombre1, password, sitio FROM usuario");
+    qry.exec("SELECT nombreC, password, sitio FROM usuario");
     int i = 0;
     while (qry.next()) {
         EntidadUsuario L = {
